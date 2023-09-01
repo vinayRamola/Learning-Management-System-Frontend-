@@ -52,6 +52,35 @@
     @tailwind utilities;
 ```
 
-5. Adding install plugins and dependecies
+### Adding install plugins and dependecies
 
-npm install @reduxjs/toolkit react-redux react-router-dom react-icons react-chartjs-2 chart.js daisyui axios react-hot-toast @tailwindcss/line-clamp
+```
+    npm install @reduxjs/toolkit react-redux react-router-dom react-icons react-chartjs-2 chart.js daisyui axios react-hot-toast @tailwindcss/line-clamp
+```
+
+### Configure auto import sort esline
+
+1. Install simple import sore
+
+```
+    npm i -D eslint-plugin-simple-import-sort
+```
+
+2. Add rule in `.eslintrc.cjs`
+```
+    'simple-import-sort/imports': 'error',
+```
+
+2. Add  simple-import plugin in `eslintrc.cjs`
+```
+    plugins: [...,'simple-import-sort']
+```
+
+3. To Enable auto import sort in file save in vscode
+    - Open  `settings.json`
+    - add the following config
+```
+    "editor.codeActionsOnSave":{
+        "source.fixAll.eslint":true"
+    }
+```
