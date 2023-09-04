@@ -6,7 +6,7 @@ const Footer = () => {
 
     return (
     <>
-        <footer className='relative left-0 bottom-0 py-5 h-[10vh] w-[100vw] flex flex-col sm:flex-row items-center justify-between text-white bg-gray-800 sm:px-20'>
+        <footer className='relative left-0 bottom-0 py-5 h-[10vh]cd w-[100vw] flex flex-col sm:flex-row items-center justify-between text-white bg-gray-800 sm:px-20'>
             <section className=' text-lg '>
                 Copyright {year} | All rights reserved
             </section>

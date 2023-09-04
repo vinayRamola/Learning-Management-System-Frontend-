@@ -11,6 +11,7 @@ import { Provider } from 'react-redux';
 // component imports
 import App from './App.jsx'
 import store from './Redux/store'
+import Footer from './Components/Footer'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <Provider store={store}>
