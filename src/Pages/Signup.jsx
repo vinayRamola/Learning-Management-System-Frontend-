@@ -4,7 +4,7 @@ import { BsPersonCircle } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast"
 import { useDispatch } from "react-redux";
-import { createAccount } from "../Redux/Slices/AuthSlice";
+import { createAccount } from "../Redux/Slices/AuthSlice.js";
 
 
 function Signup(){
