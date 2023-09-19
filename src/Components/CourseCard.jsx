@@ -1,14 +1,17 @@
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 function CourseCard({data}){
+
     const navigate = useNavigate();
+    
 
     return(
-        <div onClick={() => navigate("/course/description/")} className="text-white w-[22rem] h-[430px] shadow-lg cursor-pointer rounded-lg group overflow-hidden bg-zinc-700" >
+        <div onClick={() => navigate("/course/description/", {state: {...data}})} className="text-white w-[22rem] h-[430px] shadow-lg cursor-pointer rounded-lg group overflow-hidden bg-zinc-700" >
             <div className="overflow-hidden">
                 <img 
                 className="h-48 w-full rounded-tl-lg rounded-tr-lg group-hover:scale-[1,2] transition-all ease-in-out duration-300"
-                src={DataTransfer?.thumnail?.secure_url}
+                src={data?.thumbnail?.secure_url}
                 alt="course thumbnail"
                  />
                 <div className="p-3 space-y-1 text-white">
@@ -24,13 +27,14 @@ function CourseCard({data}){
                     </p>
                     <p className="'font-semibold">
                         <span className="text-yellow-500 font-bold">Total Lecture:</span>
-                        {data?.numberoflectures}
+                        {data?.numbersofLectures}
                     </p>
                     <p className="'font-semibold">
                         <span className="text-yellow-500 font-bold">Instructor:</span>
-                        {data?.createdby}
+                        {data?.createdBy}
                     </p>
                 </div>
+
             </div>
         </div>
     )
