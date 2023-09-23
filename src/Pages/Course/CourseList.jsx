@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import HomeLayout from "../../Layouts/HomeLayout";
 import CourseCard from "../../Components/CourseCard";
-import { getAllCourses } from "../../Redux/Slices/CourseSlice";
+import { getAllCourses } from "../../Redux/Slices/courseSlice";
 
 function CourseList (){
     const dispatch = useDispatch();

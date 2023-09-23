@@ -2,9 +2,9 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { createNewCourse } from "../../Redux/Slices/CourseSlice";
 import HomeLayout from "../../Layouts/HomeLayout"
 import { AiOutlineArrowLeft } from "react-icons/ai";
+import { createNewCourse } from "../../Redux/Slices/courseSlice.js";
 
 function CreateCourse(){
     
@@ -54,7 +54,7 @@ function CreateCourse(){
         }
 
         const response = await dispatch(createNewCourse(userInput));
-        console.log(userInput);
+       
         if(response?.payload?.success){
             navigate('/courses');
 

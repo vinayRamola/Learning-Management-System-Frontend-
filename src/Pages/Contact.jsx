@@ -2,7 +2,7 @@ import { useState } from "react";
 import HomeLayout from "../Layouts/HomeLayout"
 import toast from "react-hot-toast";
 import axiosInstance from "../Helpers/axiosInstance";
-import {isEmail} from "../Helpers//regexMatcher"
+import {isEmail} from "../Helpers/regexMatcher";
 
 function Contact(){
 
