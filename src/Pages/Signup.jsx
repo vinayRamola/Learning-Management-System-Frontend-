@@ -118,7 +118,7 @@ function Signup(){
                     />
                     
                     <div className="flex flex-col gap-1">
-                            <label htmlFor="fullName" className="font-semi-bold">Name</label>
+                            <label htmlFor="fullName" className="font-semibold">Name</label>
                             <input
                                 type="fullName"
                                 required
